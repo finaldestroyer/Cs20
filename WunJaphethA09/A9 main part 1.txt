@@ -1,0 +1,27 @@
+int main() {
+	BST mytree;
+	int i;
+	bool b;
+
+// start with this small tree and test code
+// will be easier to debug
+	i=5;
+	mytree.insert(i);
+	i=8;
+	mytree.insert(i);
+	i=3;
+	mytree.insert(i);
+	i=12;
+	mytree.insert(i);
+	i=9;
+	mytree.insert(i);
+	mytree.print2D();
+	cout << "-------------------------------------------" << endl;
+	mytree.print2D();
+	i = 9;
+	b = mytree.search(i);
+	if (b)
+		cout << "search for 9 successful" << endl;
+	else
+		cout << "search for 9 not successful" << endl;
+	return 0;
